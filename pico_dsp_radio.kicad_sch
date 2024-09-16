@@ -1572,6 +1572,167 @@
 				)
 			)
 		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "KTMicro:KT0913"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3849,10 +4010,6 @@
 		(uuid "2cb62a7f-c214-4396-8dcf-82313da97391")
 	)
 	(no_connect
-		(at 222.25 124.46)
-		(uuid "2d696fff-2312-4ad7-b791-91481716ac48")
-	)
-	(no_connect
 		(at 38.1 88.9)
 		(uuid "2f96fca4-cbf8-425b-a394-0aa9c923066f")
 	)
@@ -3881,6 +4038,10 @@
 		(uuid "6d865439-c95d-4f42-bf56-0e9522775f1c")
 	)
 	(no_connect
+		(at 55.88 93.98)
+		(uuid "7b6b1859-66d9-48c3-b475-853fc3434253")
+	)
+	(no_connect
 		(at 53.34 93.98)
 		(uuid "7ca0aeba-75ca-47f8-b744-bbd5793ae327")
 	)
@@ -3907,10 +4068,6 @@
 	(no_connect
 		(at 73.66 68.58)
 		(uuid "a4dc8bce-6d84-4d05-8e88-cbd217ece4c8")
-	)
-	(no_connect
-		(at 196.85 124.46)
-		(uuid "a4e70035-7512-413a-8840-ab26bc06338f")
 	)
 	(no_connect
 		(at 38.1 86.36)
@@ -4132,6 +4289,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 181.61) (xy 137.16 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f98b8ca-0fb8-43d8-970c-c2c87483db1d")
+	)
+	(wire
+		(pts
 			(xy 193.04 134.62) (xy 196.85 134.62)
 		)
 		(stroke
@@ -4312,6 +4479,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 133.35) (xy 124.46 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4523bf12-bf0b-48cc-9d73-a4b6914269b8")
+	)
+	(wire
+		(pts
 			(xy 252.73 135.89) (xy 257.81 135.89)
 		)
 		(stroke
@@ -4349,6 +4526,16 @@
 			(type default)
 		)
 		(uuid "4b9c7877-6380-49be-bd70-88570aa2b7f7")
+	)
+	(wire
+		(pts
+			(xy 124.46 175.26) (xy 124.46 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f0e408c-63a5-4149-904e-5b9f58a9b13a")
 	)
 	(wire
 		(pts
@@ -4419,6 +4606,16 @@
 			(type default)
 		)
 		(uuid "67762221-09a8-4ce5-ad54-c31f354139d7")
+	)
+	(wire
+		(pts
+			(xy 124.46 143.51) (xy 124.46 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4532a6-6907-4cf1-bf2a-d5e1252ba46f")
 	)
 	(wire
 		(pts
@@ -4549,16 +4746,6 @@
 			(type default)
 		)
 		(uuid "8b3d0218-06dc-4d40-95be-91f475c91df0")
-	)
-	(wire
-		(pts
-			(xy 55.88 93.98) (xy 55.88 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8be4cede-10c1-4a1d-bb33-f86bcef9a1a8")
 	)
 	(wire
 		(pts
@@ -4792,6 +4979,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 185.42) (xy 124.46 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b91060b1-c935-4acd-88dc-8eba2fcb7a97")
+	)
+	(wire
+		(pts
 			(xy 77.47 71.12) (xy 77.47 83.82)
 		)
 		(stroke
@@ -4922,6 +5119,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 124.46) (xy 196.85 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb03556d-f026-4648-b2b9-80829199e415")
+	)
+	(wire
+		(pts
 			(xy 181.61 129.54) (xy 196.85 129.54)
 		)
 		(stroke
@@ -4949,6 +5156,16 @@
 			(type default)
 		)
 		(uuid "cfd0ba30-b549-4f40-b280-95dc394dc817")
+	)
+	(wire
+		(pts
+			(xy 128.27 139.7) (xy 137.16 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0893f07-baa2-4a92-b217-c94bab57c0b6")
 	)
 	(wire
 		(pts
@@ -5102,6 +5319,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 124.46) (xy 236.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff9b6ac-5d7a-4d94-9cca-2b7467dabea2")
+	)
+	(wire
+		(pts
 			(xy 36.83 147.32) (xy 55.88 147.32)
 		)
 		(stroke
@@ -5149,6 +5376,16 @@
 			(type default)
 		)
 		(uuid "fdfcd947-fd33-4f66-af03-742fa1400524")
+	)
+	(text "Volume Adjustment"
+		(exclude_from_sim no)
+		(at 117.094 164.592 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "1199903e-c361-4358-a60a-df559cf08d38")
 	)
 	(text "Battery Charge"
 		(exclude_from_sim no)
@@ -5232,6 +5469,16 @@
 			(justify left)
 		)
 		(uuid "bbcd19f2-fd37-4f3f-9c88-9d1b9479251d")
+	)
+	(text "Channel Adjustment"
+		(exclude_from_sim no)
+		(at 114.554 122.682 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ce7c158d-b60e-4539-83ad-e8d36c008cc3")
 	)
 	(text "TFT LCD"
 		(exclude_from_sim no)
@@ -5320,6 +5567,17 @@
 		)
 		(uuid "21f0057a-c14c-4077-8d2f-14c59c52b846")
 	)
+	(label "CH"
+		(at 181.61 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "232d4bc1-ead9-4428-b637-e659c1df591e")
+	)
 	(label "RFINP"
 		(at 236.22 134.62 180)
 		(fields_autoplaced yes)
@@ -5364,6 +5622,17 @@
 		)
 		(uuid "4199278d-05a4-4340-95ba-8536d8dab288")
 	)
+	(label "CH"
+		(at 137.16 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "50ed53e5-ecc2-4b08-8fd5-11e529cf5b0a")
+	)
 	(label "GPIO20"
 		(at 88.9 76.2 180)
 		(fields_autoplaced yes)
@@ -5407,6 +5676,17 @@
 			(justify left bottom)
 		)
 		(uuid "6e73f7de-2515-4938-8f4f-42c8f5cf162f")
+	)
+	(label "VOL"
+		(at 137.16 181.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "779ef775-e7ea-4bd9-99fe-c3d7a1a53f5a")
 	)
 	(label "GPIO09"
 		(at 36.83 149.86 0)
@@ -5462,6 +5742,17 @@
 			(justify left bottom)
 		)
 		(uuid "aa13bc5c-f94d-48bf-a37e-d256a97f62b6")
+	)
+	(label "VOL"
+		(at 236.22 124.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1e269f3-a805-45d0-9528-294d565dd10d")
 	)
 	(label "VBAT"
 		(at 246.38 50.8 180)
@@ -5678,6 +5969,72 @@
 			(project ""
 				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 124.46 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07381a6c-bfb0-4248-b5e1-1efcc76c224d")
+		(property "Reference" "#PWR026"
+			(at 124.46 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 124.46 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f970c10-9cda-4468-b9b9-ab012aaf756c")
+		)
+		(instances
+			(project "pico_dsp_radio"
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5923,71 +6280,6 @@
 			(project ""
 				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "13b73fdb-be63-4e69-8a27-04f160cde152")
-		(property "Reference" "#PWR02"
-			(at 55.88 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db102556-7277-4147-8834-d13aacc5e6a8")
-		)
-		(instances
-			(project "pico_dsp_radio"
-				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6698,6 +6990,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 124.46 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f9a62c1-0353-4aa0-ac7b-2474c7064f00")
+		(property "Reference" "RV2"
+			(at 121.92 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RV100F-30-6K3B-B10K-B301"
+			(at 121.92 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 124.46 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3bc540b3-2b84-4c4a-96f5-98fad845b516")
+		)
+		(pin "1"
+			(uuid "c5b5c080-6d38-4b66-9579-9c4a6fa64d1d")
+		)
+		(pin "2"
+			(uuid "3ae8de2b-31d9-408a-a7b8-2ceda8dc594d")
+		)
+		(instances
+			(project "pico_dsp_radio"
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 77.47 100.33 0)
 		(unit 1)
@@ -6823,6 +7188,72 @@
 			(project ""
 				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4eaad551-2a52-457a-98a6-0295f14a37f5")
+		(property "Reference" "#PWR028"
+			(at 124.46 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "750dc26d-223f-40d7-9c2a-02f7ab5b7862")
+		)
+		(instances
+			(project "pico_dsp_radio"
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7775,6 +8206,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 124.46 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91743b48-6ff7-456b-bd6c-207ca78b9d01")
+		(property "Reference" "#PWR02"
+			(at 124.46 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "330e7617-f0e1-426c-93ef-e323990ef4e7")
+		)
+		(instances
+			(project "pico_dsp_radio"
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 261.62 54.61 0)
 		(unit 1)
@@ -8638,6 +9135,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 124.46 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b601a4d8-22ea-46f5-80ab-cdccda6a9363")
+		(property "Reference" "#PWR027"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 124.46 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 124.46 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b18a1d49-ebbe-4550-b188-4f80b4bd8196")
+		)
+		(instances
+			(project "pico_dsp_radio"
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 252.73 152.4 0)
 		(unit 1)
@@ -9062,6 +9625,79 @@
 			(project ""
 				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 124.46 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb992625-74a8-48e4-b2fa-33a9af301ab7")
+		(property "Reference" "RV1"
+			(at 121.92 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RV100F-30-6K3B-B10K-B301"
+			(at 121.92 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 124.46 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "209e6dea-2fc8-4ff6-be9c-7bd88fb863b5")
+		)
+		(pin "1"
+			(uuid "91173c72-df2b-40ad-ab79-02525ded4f9d")
+		)
+		(pin "2"
+			(uuid "caf07661-a0af-4ab6-bb1d-8302bf9e449f")
+		)
+		(instances
+			(project ""
+				(path "/501e77a1-4434-4791-8d34-c6e7ef329038"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
