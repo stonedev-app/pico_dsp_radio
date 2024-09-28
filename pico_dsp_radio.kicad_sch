@@ -7952,7 +7952,7 @@
 				)
 			)
 		)
-		(property "Value" "FC-135 32.768KHz"
+		(property "Value" "32.768K12.5PI/4115E"
 			(at 261.62 130.81 0)
 			(effects
 				(font
