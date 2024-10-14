@@ -1,18 +1,14 @@
 #include <Arduino.h>
+#include "LGFX_ST7789.hpp"
 
-// put function declarations here:
-int myFunction(int, int);
+static LGFX_ST7789 lcd;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  lcd.init();
+  lcd.setFont(&fonts::lgfxJapanGothicP_20);
+  lcd.println("DSPラジオ");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
