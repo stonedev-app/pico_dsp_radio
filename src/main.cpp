@@ -5,11 +5,13 @@ static LGFX_ST7789 lcd;
 
 void drawClear();
 void drawAntenna();
+void drawSpeaker();
 
 void setup() {
   lcd.init();
   drawClear();
   drawAntenna();
+  drawSpeaker();
 }
 
 void loop() {
@@ -55,6 +57,33 @@ void drawAntenna() {
   // Fourth line
   lcd.setColor(TFT_DARKGREY);
   lcd.fillRect(62, 23, 5, 40);
+
+  // End
+  lcd.endWrite();
+}
+
+void drawSpeaker() {
+  // Start
+  lcd.startWrite();
+
+  // Draw a speaker
+  // Draw a rect
+  lcd.setColor(TFT_WHITE);
+  lcd.fillRect(97, 36, 10, 14);
+  // Draw a triangle
+  lcd.fillTriangle(101, 43, 115, 28, 115, 58);
+
+  // Draw waves
+  // Draw an arc from the inside
+  // First arc
+  lcd.setColor(TFT_WHITE);
+  lcd.fillArc(116, 43, 7, 5, 315, 405);
+  // Second arc
+  lcd.setColor(TFT_WHITE);
+  lcd.fillArc(116, 43, 14, 12, 315, 405);
+  // Third arc
+  lcd.setColor(TFT_DARKGREY);
+  lcd.fillArc(116, 43, 21, 19, 315, 405);
 
   // End
   lcd.endWrite();
